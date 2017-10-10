@@ -1,0 +1,7 @@
+#!/bin/bash
+
+mkdir ../build -p
+pushd ../build
+
+clang++ ../code/some.cpp -Wall -O0 -g -L/usr/X11R6/lib -lasound -lX11 -lpulse -o handmade_linux
+popd
